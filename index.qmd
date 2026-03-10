@@ -6,13 +6,19 @@ author:
     orcid: '0000-0001-5500-6336'
     email: 'mjcho@as.edu.tw'
     affiliations: 'RCHSS, Academia Sinica'
+title-slide-attributes:
+    data-background-image: https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW1na2RybnlnOTg1ankzYWViYXJhc3ppbXM0ZnFvcDFjcXl6dWZncCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wsmPIsglhNMPkUzpJA/giphy.gif
+    # /imgs/synthwave.gif # miami_nights1984-sentimental.jpeg 
+    # data-background-size: 120%, auto
+    # data-background-position: bottom
+    data-background-opacity: "0.05"
 format:
   revealjs:
     theme: [default, synthwave84-reveal-1.scss]
     slide-number: c
     incremental: true
     slide-level: 2
-    smaller: true
+    # smaller: true
     scrollable: true
 execute:
   echo: true
