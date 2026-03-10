@@ -39,36 +39,36 @@ date: last-modified
 
 ---
 
-<!-- ## Visual Digital Trace Research with Smartphone Screens -->
 ## Why Study Real-World Digital Interactions?
-![](vids/SarahClip40s_Slow.mp4){.r-stretch}
 
+![](vids/SarahClip40s_Slow.mp4){.r-stretch}
 
 ## Characteristics of Real-World Interactions
 
-- Increasing reliance on [digital media]{.neon-green}.  
-- Interactions are [rapid and bursty]{.neon-green} across platforms.  
-- [Fragmentation]{.neon-green} of content categories.  
-- [Time domain]{.neon-green} issues: exposure over short vs. long intervals.  
-- [Idiosyncrasy]{.neon-green} across individuals.  
-
-All of these challenge [conventional social and behavioral research methods]{.neon-cyan}.
+* Increasing reliance on [digital media]{.neon-green}.
+* Interactions are [rapid and bursty]{.neon-green} across platforms.
+* [Fragmentation]{.neon-green} of content categories.
+* [Time domain]{.neon-green} issues: exposure over short vs. long intervals.
+* [Idiosyncrasy]{.neon-green} across individuals.
+* All of these challenge [conventional social and behavioral research methods]{.neon-cyan}.
 
 ---
 
 ## Challenges in Capturing Digital Trace Data {background-image="imgs/nilam.jpg" background-opacity="0.2"}
 
-### Screens as Digital Trace Data (DTD) 
+### Screens as Digital Trace Data (DTD)
 
 :::: {.columns}
 ::: {.column width="70%"}
-- DTD: "records of activity (trace data) undertaken through an online information system (thus, digital)." [(Howison et al., 2011).]{.citation}  
-- Screens vs. Platform APIs & data donation:  
-  - Platform-specific vs. **user-specific** [(Ohme et al., 2024).]{.citation}
-  - Capture a **broader spectrum** of interactions.  
-  - **Multimodality**: images, text, interface elements, mixed content.  
-  - Flexible **unit of analysis** (screen, session, episode).  
-  - Ease of **passive data collection**.
+
+* DTD: "records of activity (trace data) undertaken through an online information system (thus, digital)." [(Howison et al., 2011).]{.citation}
+* Screens vs. platform APIs & data donation:
+
+  * platform-specific vs. [user-specific]{.neon-green} [(Ohme et al., 2024).]{.citation}
+  * capture a [broader spectrum]{.neon-green} of interactions
+  * [multimodality]{.neon-green}: images, text, interface elements, mixed content
+  * flexible [unit of analysis]{.neon-green} (screen, session, episode)
+  * ease of [passive data collection]{.neon-green}
 :::
 ::: {.column width="30%"}
 ![](imgs/nilam.jpg){width="100%"}
@@ -83,16 +83,20 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column width="60%"}
-- Captures smartphone screens every **5 seconds (or less)**.  
-- ~**500 million screens** from over **1,000 people** for up to **1 year**.  
-- Privacy, risk, and **data security** considerations.  
-- Linkage to periodic **surveys (health data)**.
 
+* Captures smartphone screens every **5 seconds (or less)**.
+
+* ~**500 million screens** from over **1,000 people** for up to **1 year**.
+
+* Privacy, risk, and [data security]{.neon-green} considerations.
+
+* Linkage to periodic [surveys]{.neon-green} and health measures.
+
+* A foundational move from [screen time]{.neon-cyan} to [screen content]{.neon-cyan}.
 :::
 ::: {.column width="40%"}
 ![](imgs/nature.jpg){width="100%"}
-[Reeves et al. (2020). *Nature*; Reeves et al. (2020). *Human–Computer Interaction*.]{.citation}
-
+[Reeves et al. (2020). *Nature*; Reeves et al. (2021). *Human–Computer Interaction*.]{.citation}
 :::
 ::::
 
@@ -104,11 +108,16 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns width="60%"}
 ::: {.column}
-1. **Screenome 1.0** – Research infrastructure & conventional ML-based measurements.  
-2. **Screenome 2.0** – Deep learning-based content analysis.  
-3. **Screenomics 3.0** – Multimodal encoders and large multimodal models (LMMs).
 
+1. **Screenome 1.0** – research infrastructure & conventional ML-based measurements.
+2. **Screenome 2.0** – deep learning-based content analysis.
+3. **Screenomics 3.0** – multimodal encoders and large multimodal models (LMMs).
 
+[What changes in 3.0?]{.neon-cyan}
+
+* screens become [vectors in multimodal space]{.neon-green}
+* clustering, retrieval, and labeling become scalable
+* inductive exploration and hypothesis generation become much easier
 :::
 ::: {.column width="40%"}
 ![](imgs/scr1p0.png){width="100%"}
@@ -124,17 +133,17 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- Homeostatic mechanism of **media sequencing** in everyday life.  
-- Young adults’ smartphone interactions with **family**.  
-- ML-based content analysis combined with **qualitative interviews** and diary methods.  
-- Focus on how digital interactions **sequenced with offline interactions** shape family dynamics.
 
+* Homeostatic mechanism of [media sequencing]{.neon-green} in everyday life.
+* Young adults’ smartphone interactions with [family]{.neon-green}.
+* ML-based content analysis combined with [qualitative interviews]{.neon-green} and diary methods.
+* Focus on how digital interactions [sequenced with offline interactions]{.neon-green} shape family dynamics.
 :::
 ::: {.column}
-![](imgs/homeostasis.png){width="100%"} 
+![](imgs/homeostasis.png){width="100%"}
 [Cho et al. (2023). *Heliyon*.]{.citation}
-![](imgs/ya.png){width="100%"} 
-[Sun et al. (2023). Journal of Social and Personal Relationships.]{.citation}
+![](imgs/ya.png){width="100%"}
+[Sun et al. (2023). *Journal of Social and Personal Relationships*.]{.citation}
 :::
 ::::
 
@@ -146,12 +155,12 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- Linking **survey measures** with **digital trace data (DTD)**:
-  - Depression, State Anxiety, ADHD, Happiness.  
-  - Integrating **self-report scales** with DTD.  
-  - **Real-time, personalized detection** of mental health states.  
-  - Complementing **clinical and survey** indicators.
 
+* Linking [survey measures]{.neon-green} with [digital trace data (DTD)]{.neon-green}.
+* Depression, state anxiety, ADHD, and happiness tracked longitudinally.
+* Person-specific models from [6.7M screenshots]{.neon-green} and repeated surveys.
+* Strong within-person couplings can emerge, but [the configuration differs across individuals]{.neon-cyan}.
+* Suggests a move toward [idiographic media psychology]{.neon-cyan} and precision mental health.
 :::
 ::: {.column}
 ![](imgs/mental_health.png){width="100%"}
@@ -167,15 +176,15 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- CNN-based **scene recognition** to categorize environments.  
-- CNN-based **food detection** for identifying food-related content.  
-- Visual **emotion recognition** (valence and arousal) from screen images.  
-- Weekly trends: link **visual emotion trajectories** to well-being.
+
+* CNN-based [scene recognition]{.neon-green} to categorize environments.
+* CNN-based [food detection]{.neon-green} for identifying food-related content.
+* Visual emotion recognition (valence and arousal) from screen images.
+* Weekly trends: link [visual emotion trajectories]{.neon-green} to well-being.
 :::
 ::: {.column}
 ![](imgs/valence.png){width="100%"}
 ![](imgs/scene.png){width="100%"}
-
 :::
 ::::
 
@@ -187,11 +196,11 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- **20 adolescents**, 1-week observation of smartphone screens.  
-- **3%** of all exposure is food-related; **0.6%** branded.  
-- Demonstrates how a specific **content category** can be mined from large screen sets.  
-- Shows feasibility of **longitudinal content tracking** at screen level.
 
+* **20 adolescents**, 1-week observation of smartphone screens.
+* **3%** of all exposure is food-related; **0.6%** branded.
+* Demonstrates how a specific [content category]{.neon-green} can be mined from large screen sets.
+* Shows feasibility of [longitudinal content tracking]{.neon-green} at the screen level.
 :::
 ::: {.column}
 ![](imgs/food_adol.png){width="100%"}
@@ -207,11 +216,11 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- **Screenotype**: unique screenomes associated with behaviors and experiences.  
-- Used **HDBSCAN + UMAP** on 320K data points for cluster analysis.  
-- **26 distinct clusters**; ~19% non-noise.  
-- Within-app **CLIP variance > between-app variance** → rich within-app heterogeneity.
 
+* [Screenotype]{.neon-green}: unique screenomes associated with behaviors and experiences.
+* **HDBSCAN + UMAP** on **320K** data points for cluster analysis.
+* **26 distinct clusters**; ~19% non-noise.
+* [Within-app CLIP variance > between-app variance]{.neon-cyan} → rich within-app heterogeneity.
 :::
 ::: {.column}
 ![](imgs/screenotype.png){width="100%"}
@@ -223,13 +232,15 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 ## Multimodal Encoders and LMMs {background-image="imgs/atlas.png" background-opacity="0.2"}
 
-### Mapping Digital Screen Content 
+### Mapping Digital Screen Content
 
 :::: {.columns}
 ::: {.column}
-- **Media Content Atlas** for open-ended exploration of digital media interactions.  
-- Content mapping with **HDBSCAN + UMAP** on **1.12M** data points from **112 participants**.  
-- Supports hypothesis generation about **media repertoires** and **use patterns**.
+
+* [Media Content Atlas]{.neon-green} for open-ended exploration of digital media interactions.
+* Content mapping with **HDBSCAN + UMAP** on **1.12M** data points from **112 participants**.
+* Moves beyond app names and app categories toward [content-based clustering]{.neon-cyan}.
+* Supports hypothesis generation about [media repertoires]{.neon-green} and [use patterns]{.neon-green}.
 :::
 ::: {.column}
 ![](imgs/atlas.png){width="100%"}
@@ -241,16 +252,19 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 ## Multimodal Encoders and LMMs {background-image="imgs/atlas_infra.png" background-opacity="0.1"}
 
-### Mapping Digital Screen Content 
+### Mapping Digital Screen Content
 
 :::: {.columns}
 ::: {.column}
-- **Image + text embeddings** combined.  
-  - Large multimodal model (LMM) descriptions.  
-- **Topic label generation** for clusters of screens.  
-- **Information retrieval**: querying screens and descriptions for:  
-  - Content categories.
-  - usage contexts, etc.
+
+* [Image + text embeddings]{.neon-green} combined.
+* Large multimodal model (LMM) descriptions.
+* Topic label generation for clusters of screens.
+* [Information retrieval]{.neon-cyan}: querying screens and descriptions for
+
+  * content categories
+  * usage contexts
+  * theoretically relevant concepts
 :::
 ::: {.column}
 ![](imgs/atlas_infra.png){width="100%"}
@@ -266,13 +280,15 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- **Screenomes**: longitudinal smartphone screenshots.  
-- **Image Encoder** (CLIP, EVA-CLIP, e5-V) → **image embeddings**.  
-- **OCR Engine** (e.g., CRAFT + STR) → text from screens.  
-- **Text Encoder** (MiniLM, distilRoBERTa) → **document embeddings**.  
-- **Task-specific labels** with LMM + PEFT (Gemma 3 + LoRA).  
-- Users provide **human labels**; high-power LMMs supply **synthetic labels**.
 
+* **Screenomes**: longitudinal smartphone screenshots.
+* **Image encoder** (CLIP, EVA-CLIP, e5-V) → image embeddings.
+* **OCR engine** → text from screens.
+* **Text encoder** → document embeddings.
+* **Task-specific labels** with LMM + PEFT.
+* Human labels + synthetic labels together support scalable annotation.
+
+[This is the technical backbone of Screenomics 3.0.]{.neon-cyan}
 :::
 ::: {.column}
 ![](imgs/scr3_arch.png){width="100%"}
@@ -284,52 +300,15 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 ## Screenomics 3.0 Architecture
 
-### Image Encoder: CLIP
-
-:::: {.columns}
-::: {.column}
-- CLIP (Contrastive Language–Image Pre-training).  
-- Jointly learns **image–text representations**.  
-- Surpasses many fully supervised baselines on zero-shot tasks.  
-- Core to many **state-of-the-art multimodal architectures**.
-:::
-::: {.column}
-![](imgs/clip.png){width="100%"}
-[Radford et al. (2021).]{.citation}
-:::
-::::
-
----
-
-## Screenomics 3.0 Architecture
-
-### Image Encoder: EVA-CLIP
-
-:::: {.columns}
-::: {.column}
-- EVA (Explore the limits of Visual representation at scAle).  
-  - Pretrains **ViTs** using masked image modeling (MIM).  
-  - Helps ViTs learn fine-grained image structure before contrastive learning.  
-- EVA-02-CLIP: outperforms similar-sized models on many tasks, including **image retrieval**.
-:::
-::: {.column}
-![](imgs/eva_clip.png){width="100%"}
-[Fang et al. (2023).]{.citation}
-:::
-::::
-
----
-
-## Screenomics 3.0 Architecture
-
 ### Text-to-Image Retrieval with CLIP
 
 :::: {.columns}
 ::: {.column}
-- Compute **cosine similarity** between text queries and image embeddings.  
-- Efficiently find **relevant (and irrelevant)** images.  
-- Supports rapid creation of **balanced labeled datasets**.  
-- Enables exploratory analyses of **usage contexts** and **media patterns**.
+
+* Compute [cosine similarity]{.neon-green} between text queries and image embeddings.
+* Efficiently find [relevant and irrelevant]{.neon-green} images.
+* Supports rapid creation of [balanced labeled datasets]{.neon-green}.
+* Enables exploratory analyses of [usage contexts]{.neon-green} and media patterns.
 :::
 ::: {.column}
 ![](imgs/clip_bev.png){width="100%"}
@@ -344,11 +323,14 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- **Label Studio** for customized labeling interfaces across projects.  
-- Supports **multiple annotation tasks** (e.g., food presence, valence, task type).  
-- Reliability is a key challenge:  
-  - need for consistent instructions,  
-  - quality control and adjudication.
+
+* **Label Studio** for customized labeling interfaces across projects.
+* Supports [multiple annotation tasks]{.neon-green} (food presence, valence, task type, etc.).
+* Reliability remains a key challenge:
+
+  * consistent instructions
+  * quality control
+  * adjudication
 :::
 ::: {.column}
 ![](imgs/human_label.png){width="100%"}
@@ -364,18 +346,20 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- **LLaVA** (Large Language and Vision Assistant): open-source LMM.  
-- Use cases in this project:  
-  - **VQA** over smartphone screens,  
-  - **PEFT** for task-specific labeling,  
-  - Large-N inference over millions of screens.  
-- Competitive families of models:  
-  - Gemma 3 (12B, 8-bit quantization).  
-  - Qwen2.5-VL (7B, bf16).  
-  - Llama 3.2-V (11B, 8-bit, split across GPUs).
+
+* **LLaVA** and related open-source LMMs enable:
+
+  * [VQA]{.neon-green} over smartphone screens
+  * [PEFT]{.neon-green} for task-specific labeling
+  * large-N inference over millions of screens
+* Competitive families now include:
+
+  * Gemma 3
+  * Qwen2.5-VL
+  * Llama 3.2-V
 :::
 ::: {.column}
-![](imgs/task_specific_label.png){width="100%"}
+![](imgs/task_specific_label.png){width="100%"}. 
 [Liu et al. (2023).]{.citation}
 :::
 ::::
@@ -388,17 +372,15 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- LoRA (Low-Rank Adaptation of Large Language Models).  
-  - Replace full-rank weight matrix **W (d × d)** with low-rank **A (d × r)** and **B (r × d)**.  
-  - Freeze **W**, train only **B · A**.  
-- Makes large-model fine-tuning **feasible** on modest hardware.  
-  - Pretraining → SFT (supervised fine-tuning) → RLHF.  
-  - Reduces trainable parameters and memory footprint substantially.  
-- Example performance (food-detection use case):  
-  - Accuracy ≈ .96, macro F1 ≈ .93, Kappa ≈ .85.
+
+* LoRA makes large-model fine-tuning [feasible on modest hardware]{.neon-green}.
+* Freeze the base model, train only small low-rank adapters.
+* Reduces trainable parameters and memory footprint substantially.
+* In practice, this is what makes domain-specific screen labeling much more manageable.
 :::
 ::: {.column}
-![](imgs/lora.png){width="100%"}
+![](imgs/lora.png){width="70%"}
+
 [Hu et al. (2021).]{.citation}
 :::
 ::::
@@ -411,12 +393,12 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 :::: {.columns}
 ::: {.column}
-- LMM-based **user activity** and **intention measurement**:
-  - Combine **commercial solutions** with prompt engineering.  
-  - Measure high-level behavioral constructs (e.g., consuming media, functional activities).  
-  - In one application, Krippendorff’s Alpha = 0.877, precision = 0.92, recall = 0.91.  
-  - Context-based inference: identifying **user intention** behind each screen.
 
+* LMM-based measurement of [user activity]{.neon-green} and [intention]{.neon-green}.
+* Combine commercial solutions with prompt engineering.
+* Measure higher-level behavioral constructs (e.g., consuming media, functional activities).
+* One application: Krippendorff’s Alpha = 0.877, precision = 0.92, recall = 0.91.
+* Opens the door to measuring [meaningful psychological constructs]{.neon-cyan}, not just raw content.
 :::
 ::: {.column}
 ![](imgs/intent.png){width="100%"}
@@ -430,40 +412,102 @@ All of these challenge [conventional social and behavioral research methods]{.ne
 
 ### Challenges, Limitations, & Future Possibilities
 
-- Over-reliance on models can lead to **subtle biases** or overconfidence in results.  
-- Need for **interpretability tools** to better understand model decisions.  
-- Future expansions:  
-  - Efficient model training and inference,  
-  - Real-time analytics,  
-  - User feedback and participatory design.  
-- Importance of **interdisciplinary collaborations** for domain-specific content analysis.
+* Over-reliance on models can lead to [subtle biases]{.neon-green} or overconfidence in results.
+* Need for [interpretability tools]{.neon-green} to better understand model decisions.
+* Infrastructure is improving: open-source Screenomics now supports more flexible, customizable multimodal data collection.
+* Importance of [interdisciplinary collaboration]{.neon-cyan} for domain-specific content analysis. [Kim et al. (2026). *Nature Health*]{.citation}
+* Future expansions:
+
+  * efficient model training and inference
+  * real-time analytics
+  * richer multimodal streams
+  * user feedback and participatory design
+
+
 
 ---
 
-# Some related ideas...
+## Key Takeaway
+
+Screenomics shifts the study of media behavior from [how long people use media]{.neon-green} to [what people actually experience in digital environments]{.neon-cyan}.
+
+---
+
+## Transition
+
+If digital life can now be measured at this level of resolution, then the next question is not only [what people see]{.neon-green}, but also [what kinds of styles and meanings emerge across media content]{.neon-cyan}.
+
+---
+
+# Some related ideas…
+
+---
 
 ## {background-video="vids/jh.mp4" background-size="100%"}
 
-## The Language of Biology 
-<!-- ![](vids/jh.mp4){.r-stretch} -->
+---
 
-### Digital Biology = Biology Becomes Computable
-- Integration of heterogeneous biological data (genes → cells → organs → behavior).
-- Multi-scale modeling that links molecular processes to whole-organism function.
-- Networked, collaborative science powered by AI and high-performance computing.
-- Simulation + experimentation loop accelerates biological discovery.
-- Biology shifts from descriptive to predictive and engineering-compatible.
+## The Puzzle
+
+- Digital media research often measures:
+  * **Time spent**
+  * **Platform usage**
+  * **Interaction counts**
+
+- But these measures miss something fundamental.
+
+- Digital environments are fundamentally **symbolic environments**. People interact with:
+  * **Images & language**
+  * **Multimodal cues, e.g., audiovisual**
+  * **Cultural symbols**
+
+- What spreads in these environments is not only information, but also **styles, meanings, and signals**.
 
 ---
 
-## The Language of Biology 
+## The Analogy
 
-### AI as the Engine of Digital Biology
-- Foundation models enable pattern discovery in massive biological datasets
-- Generative models simulate biological systems and guide interventions
-- AI accelerates modeling from molecules → cells → circuits → behavior
-- Computational frameworks unify biological processes across scales
-- AI turns biology into something legible, learnable, and designable
+- Another scientific field recently underwent a similar transformation: **biology**. For much of its history, biology was:
+  * **Descriptive & observational**
+  * **Limited by measurement tools**
+
+- Once biological systems became **digitally measurable**, the field changed. Researchers could integrate:
+  * **Genomic data**
+  * **Imaging data**
+  * **Physiological measurements**
+- Biology became increasingly **computational and model-driven**.
+
+---
+
+## The Transition
+
+Something similar may now be happening in the study of **human communication and behavior**.
+
+- For the first time we can observe large-scale digital interaction environments with high resolution:
+  * Screenomics
+  * Digital trace data
+  * Multimodal communication archives
+
+- Combined with:
+  * Multimodal embeddings
+  * Large language and vision models
+
+- These data allow us to study **systems of meaning** in digital media.
+
+---
+
+## Next Project: Communication Styles in Social Media
+
+This motivates the next project. Instead of analyzing individual posts or messages, we ask:
+[**Can we identify systematic communication styles in multimodal political media?**]{.neon-green}
+
+To answer this question, we developed a pipeline that:  
+
+1. Processes raw social media videos
+2. Extracts visual, vocal, and textual features
+3. Identifies recurring multimodal communication styles
+
+The next section introduces this framework.
 
 ---
 

@@ -67,8 +67,13 @@ $code-inline-border-color: rgba(249, 42, 173, 0.6) !default;
   font-family: $font-family-sans-serif;
 }
 
+.reveal a {
+  line-height: 1.5em;
+}
+
 .reveal p {
-  font-weight: 300;
+  font-weight: 200;
+  // font-weight: lighter;
   margin-top: 1.25em;
 }
 
@@ -171,8 +176,13 @@ $code-inline-border-color: rgba(249, 42, 173, 0.6) !default;
 }
 
 // Lists
-.reveal ul,
+.reveal ul, {
+  font-weight: 200;
+  margin-top: 0.8em;
+}
+
 .reveal ol {
+  font-weight: 200;
   margin-top: 0.8em;
 }
 

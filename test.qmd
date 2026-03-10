@@ -1,0 +1,106 @@
+---
+title: "Multimodal digital trace data research using Screenomics and multi-agent systems"
+subtitle: "... and some thoughts on the dynamics of meanings"
+author:
+  - name: "卓牧融 | Mu-Jung 'MJ' Cho"
+    orcid: '0000-0001-5500-6336'
+    email: 'mjcho@as.edu.tw'
+    affiliations: 
+      - name: 'RCHSS, Academia Sinica'
+title-slide-attributes:
+    data-background-image: https://media1.tenor.com/m/TmIXaAyzuwwAAAAd/space-art-stars-cosmic.gif
+    # /imgs/synthwave.gif # miami_nights1984-sentimental.jpeg 
+    # data-background-size: 120%, auto
+    # data-background-position: bottom
+    data-background-opacity: "0.2"
+format:
+  revealjs:
+    template-partials:
+      - title-slide.html
+    theme: [default, synthwave84-reveal-1.scss]
+    slide-number: c
+    incremental: true
+    slide-level: 2
+    # smaller: true
+    scrollable: true
+execute:
+  echo: true
+occassion: "@ NTU Psychology Seminar"
+date: last-modified
+---
+
+```{r}
+#| label: setup
+#| echo: false
+# minimal setup chunk
+```
+
+# Some related ideas…
+
+---
+
+## {background-video="vids/jh.mp4" background-size="100%"}
+
+---
+
+## The Puzzle
+
+- Digital media research often measures:
+  * **Time spent**
+  * **Platform usage**
+  * **Interaction counts**
+
+- But these measures miss something fundamental.
+
+- Digital environments are fundamentally **symbolic environments**. People interact with:
+  * **Images & language**
+  * **Multimodal cues, e.g., audiovisual**
+  * **Cultural symbols**
+
+- What spreads in these environments is not only information, but also **styles, meanings, and signals**.
+
+---
+
+## The Analogy
+
+- Another scientific field recently underwent a similar transformation: **biology**. For much of its history, biology was:
+  * **Descriptive & observational**
+  * **Limited by measurement tools**
+
+- Once biological systems became **digitally measurable**, the field changed. Researchers could integrate:
+  * **Genomic data**
+  * **Imaging data**
+  * **Physiological measurements**
+- Biology became increasingly **computational and model-driven**.
+
+---
+
+## The Transition
+
+Something similar may now be happening in the study of **human communication and behavior**.
+
+- For the first time we can observe large-scale digital interaction environments with high resolution:
+  * Screenomics
+  * Digital trace data
+  * Multimodal communication archives
+
+- Combined with:
+  * Multimodal embeddings
+  * Large language and vision models
+
+These data allow us to study **systems of meaning** in digital media.
+
+---
+
+## Next Project: Communication Styles in Social Media
+
+This motivates the next project. Instead of analyzing individual posts or messages, we ask:
+[**Can we identify systematic communication styles in multimodal political media?**]{.neon-green}
+
+To answer this question, we developed a pipeline that:  
+
+1. Processes raw social media videos
+2. Extracts visual, vocal, and textual features
+3. Identifies recurring multimodal communication styles
+
+The next section introduces this framework.
