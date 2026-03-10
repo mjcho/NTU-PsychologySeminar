@@ -1,0 +1,326 @@
+/*-- scss:defaults --*/
+
+// Synthwave84-inspired reveal.js / Quarto theme
+// Palette based on the "Synthwave '84" VS Code theme.
+
+// Core palette
+$sw-bg: #2a2139;        // primary background
+$sw-bg-alt: #34294f;    // secondary background / panels
+$sw-fg: #fdfdfd;        // main foreground text
+$sw-muted: #f4eee4;     // softer foreground text
+
+$sw-pink: #fc28a8;      // primary accent (pink)
+$sw-pink-strong: #f92aad; // intense pink neon
+$sw-cyan: #03edf9;      // cyan accent
+$sw-purple: #6d77b3;    // secondary accent
+$sw-orange: #f97e72;    // warm accent
+$sw-green: #72f1b8;     // success / highlight accent
+
+// Shadows inspired by Synthwave84 token styles
+$sw-shadow-soft: 0 0 2px #100c0f;
+$sw-shadow-pink: 0 0 5px #dc078e33, 0 0 10px #ffffff33;
+$sw-shadow-cyan: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
+$sw-shadow-red: 0 0 2px #000000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
+$sw-shadow-gold: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+
+// Retain clean.scss-style variables for compatibility
+$jet: $sw-bg;           // base background (was #131516)
+$accent: $sw-pink;      // primary accent
+$accent2: $sw-cyan;     // secondary accent
+$right-arrow: "\2192"; // Unicode character for right arrow
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,350,350i,400,400i&display=swap");
+
+$font-family-sans-serif: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !default;
+$presentation-heading-font: $font-family-sans-serif !default;
+
+$presentation-heading-color: $sw-pink-strong !default;
+$presentation-heading-font-weight: 300;
+//$presentation-heading-line-height: 2;
+//$presentation-block-margin: 28px;
+$presentation-font-size-root: 32px;
+
+// Colors
+$body-bg: $sw-bg !default;
+$body-color: $sw-fg !default;
+$link-color: $sw-cyan !default;
+$selection-bg: rgba(3, 237, 249, 0.4) !default;
+
+// Code and pre blocks
+$code-block-bg: $sw-bg-alt !default;
+$code-color: $sw-muted !default;
+$code-block-border-color: rgba(3, 237, 249, 0.3) !default;
+$code-inline-bg: rgba(16, 12, 15, 0.8) !default;
+$code-inline-border-color: rgba(249, 42, 173, 0.6) !default;
+
+/*-- scss:rules --*/
+
+// Base slide background & global typography
+.reveal {
+  background-color: $body-bg;
+  background-image: linear-gradient(to bottom, $sw-bg 75%, $sw-bg-alt);
+  background-size: auto 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: $body-color;
+  font-family: $font-family-sans-serif;
+}
+
+.reveal p {
+  font-weight: 300;
+  margin-top: 1.25em;
+}
+
+// Title slide
+#title-slide {
+  text-align: left;
+
+  .title {
+    font-size: 1.4em;
+    font-weight: 300;
+    color: $sw-pink-strong;
+    text-shadow: $sw-shadow-soft, $sw-shadow-pink;
+  }
+
+  .subtitle {
+    color: $sw-purple;
+    font-style: italic;
+    margin-top: 0;
+    font-weight: 300;
+    text-shadow: $sw-shadow-soft;
+  }
+
+  .author,
+  .quarto-title-author-name {
+    color: $sw-muted;
+  }
+
+  .quarto-title-authors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+
+  .institute,
+  .quarto-title-affiliation,
+  .quarto-title-author-email {
+    font-style: italic;
+    color: $sw-purple;
+  }
+}
+
+// Headings
+// .reveal h1,
+// .reveal h2,
+// .reveal h3 {
+//   font-family: $presentation-heading-font;
+//   font-weight: $presentation-heading-font-weight;
+//   letter-spacing: 0.04em;
+// }
+
+.reveal h1 {
+  font-size: 2.0em;
+  color: $sw-pink-strong;
+  text-shadow: $sw-shadow-soft, $sw-shadow-pink;
+}
+
+.reveal h2 {
+  font-size: 1.6em;
+  color: $sw-cyan;
+  text-shadow: $sw-shadow-soft, $sw-shadow-cyan;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+  color: $sw-orange;
+  font-style: italic;
+  text-shadow: $sw-shadow-soft, $sw-shadow-gold;
+}
+
+// Links
+.reveal a {
+  line-height: 1.5em;
+  color: $link-color;
+  text-decoration: none;
+  text-shadow: $sw-shadow-soft, $sw-shadow-cyan;
+  transition: color 0.2s ease, text-shadow 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reveal a:hover {
+  color: $sw-pink-strong;
+  text-shadow: $sw-shadow-soft, $sw-shadow-pink;
+  box-shadow: 0 0 0 1px rgba(252, 40, 168, 0.6);
+}
+
+// Lists
+.reveal ul,
+.reveal ol {
+  margin-top: 0.8em;
+}
+
+.reveal li {
+  margin: 0.25em 0;
+}
+
+.reveal ul li::marker,
+.reveal ol li::marker {
+  color: $accent;
+}
+
+// Blocks: quotes, callouts
+.reveal blockquote {
+  border-left: 3px solid $sw-pink;
+  padding-left: 1em;
+  margin-left: 0;
+  color: $sw-muted;
+  text-shadow: $sw-shadow-soft;
+}
+
+// Code blocks
+.reveal pre {
+  background-color: $code-block-bg;
+  border-radius: 0.6rem;
+  padding: 0.75em 1em;
+  border: 1px solid $code-block-border-color;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.reveal code {
+  font-family: "Fira Code", "JetBrains Mono", "Source Code Pro", monospace;
+  color: $code-color;
+}
+
+.reveal pre code {
+  text-shadow: $sw-shadow-soft;
+}
+
+.reveal :not(pre) > code {
+  padding: 0.08em 0.35em;
+  border-radius: 0.35em;
+  background-color: $code-inline-bg;
+  border: 1px solid $code-inline-border-color;
+  text-shadow: $sw-shadow-soft;
+}
+
+// Tables
+.reveal table {
+  border-collapse: collapse;
+  margin: 1.25em auto;
+}
+
+.reveal table th,
+.reveal table td {
+  border: 1px solid rgba(253, 253, 253, 0.12);
+  padding: 0.35em 0.75em;
+}
+
+.reveal table thead th {
+  background: linear-gradient(to right, rgba(252, 40, 168, 0.4), rgba(3, 237, 249, 0.4));
+  color: $sw-fg;
+}
+
+// Navigation controls & progress bar
+.reveal .controls {
+  color: $sw-cyan;
+  text-shadow: $sw-shadow-cyan;
+}
+
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-down {
+  opacity: 0.7;
+}
+
+.reveal .controls .navigate-left.enabled,
+.reveal .controls .navigate-right.enabled,
+.reveal .controls .navigate-up.enabled,
+.reveal .controls .navigate-down.enabled {
+  opacity: 1;
+}
+
+.reveal .progress {
+  background: rgba(253, 253, 253, 0.06);
+}
+
+.reveal .progress span {
+  background: linear-gradient(to right, $sw-pink, $sw-cyan);
+  box-shadow: 0 0 15px rgba(252, 40, 168, 0.75);
+}
+
+// Slide numbers
+.reveal .slide-number {
+  color: $sw-muted;
+  background-color: rgba(16, 12, 15, 0.7);
+  border-radius: 999px;
+  padding: 0.2em 0.8em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+// Hamburger menu (quarto-revealjs extension)
+.reveal .slide-menu-button {
+  position: fixed;
+  top: 6px;
+  right: 0;
+  display: flex;
+  // align-items: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.reveal .slide-menu-button a {
+  pointer-events: auto;
+  color: $sw-cyan;
+  text-shadow: $sw-shadow-cyan;
+}
+
+// Utility neon classes for content
+.neon-pink {
+  color: $sw-pink-strong;
+  text-shadow: $sw-shadow-soft, $sw-shadow-pink;
+}
+
+.neon-cyan {
+  color: $sw-cyan;
+  text-shadow: $sw-shadow-soft, $sw-shadow-cyan;
+}
+
+.neon-green {
+  color: $sw-green;
+  text-shadow: $sw-shadow-soft, $sw-shadow-gold;
+}
+
+.neon-red {
+  color: #fff5f6;
+  text-shadow: $sw-shadow-red;
+}
+
+// smaller font size for captions, notes, and citations
+.caption,
+.reveal .notes,
+.citation {
+  font-size: 0.65em;
+  color: $sw-muted;
+}
+
+// Layout helpers for two-column content
+// .columns6040 {
+//   display: flex;
+//   gap: 1.5rem;
+//   align-items: flex-start;
+// }
+
+.columns6040 div.column:first-child {
+  width: 60%;
+}
+
+.columns6040 div.column:not(:first-child) {
+  width: 40%;
+}
