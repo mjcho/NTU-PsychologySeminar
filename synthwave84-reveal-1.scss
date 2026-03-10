@@ -84,7 +84,7 @@ $code-inline-border-color: rgba(249, 42, 173, 0.6) !default;
   }
 
   .subtitle {
-    color: $sw-purple;
+    color: $sw-cyan;
     font-style: italic;
     margin-top: 0;
     font-weight: 300;
@@ -112,6 +112,18 @@ $code-inline-border-color: rgba(249, 42, 173, 0.6) !default;
   .quarto-title-author-email {
     font-style: italic;
     color: $sw-purple;
+  }
+
+  .date {
+    color: $sw-purple;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+  }
+
+  .occassion {
+    color: $sw-purple;
+    font-size: 0.8em;
+    margin-top: 0.5em;
   }
 }
 
