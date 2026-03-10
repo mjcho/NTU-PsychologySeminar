@@ -1,6 +1,6 @@
 ---
-title: "Screenomics 3.0: 用AI與數位足跡探討數位時代的心理、人際關係與媒介內容"
-subtitle: "... and some thoughts on multimodal research"
+title: "Multimodal digital trace data research using Screenomics and multi-agent systems"
+subtitle: "... and some thoughts on the dynamics of meanings"
 author:
   - name: "卓牧融 | Mu-Jung 'MJ' Cho"
     orcid: '0000-0001-5500-6336'
