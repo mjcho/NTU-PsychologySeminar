@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="卓牧融 | Mu-Jung ‘MJ’ Cho">
-  <meta name="dcterms.date" content="2026-03-10">
+  <meta name="dcterms.date" content="2026-03-11">
   <title>Multimodal digital trace data research using Screenomics and multi-agent systems</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -30,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-19a6e25bd163d358a5173912474c5892.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-2f2e91e154c092f1acb999ee33f2e3e4.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -148,7 +148,7 @@
 
   <p class="occassion">@ NTU Psychology Seminar</p>
 
-  <p class="date">2026-03-10</p>
+  <p class="date">2026-03-11</p>
 </section>
 <section>
 <section id="screenomics-3.0-a-framework-for-visual-digital-trace-research" class="title-slide slide level1 center">
@@ -556,39 +556,33 @@
 <section id="a-framework-for-analyzing-and-linking-multimodal-social-media-content" class="slide level2">
 <h2>A Framework for Analyzing and Linking Multimodal Social Media Content</h2>
 <div class="columns">
-<div class="column">
+<div class="column" style="width:55%;">
 <ul>
-<li class="fragment">MJ Cho, Chingching Chang, Yuan Hsiao, Hen-Hsen Huang<br>
-</li>
-<li class="fragment">RCHSS, Academia Sinica<br>
-</li>
+<li class="fragment">MJ Cho, Chingching Chang, Yuan Hsiao, Hen‑Hsen Huang</li>
+<li class="fragment">RCHSS, Academia Sinica</li>
 </ul>
-</div><div class="column">
+</div><div class="column" style="width:45%;">
 <p><img data-src="imgs/as_scene.png" style="width:100.0%"></p>
 </div></div>
 </section>
 <section id="the-challenge-a-new-era-for-media-effects-research" class="slide level2">
 <h2>The Challenge: A New Era for Media Effects Research</h2>
-<h3 id="why-we-need-new-approaches">Why We Need New Approaches</h3>
 <div class="columns">
-<div class="column">
+<div class="column" style="width:55%;">
 <ul>
-<li class="fragment">The field is shifting from <strong>quantity of media use</strong> to <strong>content and its effects</strong> (Pouwels et al., 2024).<br>
-</li>
-<li class="fragment"><strong>Nature Research Intelligence</strong>: Multimodal communication as a frontier.<br>
-</li>
-<li class="fragment">Traditional methods are insufficient for <strong>personalized</strong> and <strong>fragmented</strong> media environments (Ohme et al., 2024; Otto et al., 2024).<br>
-</li>
-<li class="fragment">The <strong>video problem</strong>:
+<li class="fragment"><p>The field is shifting from <strong>quantity of media use</strong> to <strong>content and its effects</strong> <span class="citation">(Pouwels et al., 2024).</span></p></li>
+<li class="fragment"><p><strong>Nature Research Intelligence</strong>: Multimodal communication as a frontier.<br>
+</p></li>
+<li class="fragment"><p>Multimodal communication is emerging as a major research frontier.</p></li>
+<li class="fragment"><p>Traditional methods are insufficient for highly fragmented media environments <span class="citation">(Ohme et al., 2024).</span></p></li>
+<li class="fragment"><p><strong>The video problem:</strong></p>
 <ul>
-<li class="fragment">Dominant form of social media content.<br>
-</li>
-<li class="fragment">Multimodal and challenging to study (Kroon et al., 2024).<br>
-</li>
-<li class="fragment">Audio channel remains an <strong>under-studied dimension</strong> of communication.</li>
+<li class="fragment">Video is now a dominant form of social media content.</li>
+<li class="fragment">Video is inherently multimodal <span class="citation">(Kroon et al., 2024).</span></li>
+<li class="fragment">The audio channel remains understudied in communication research.</li>
 </ul></li>
 </ul>
-</div><div class="column">
+</div><div class="column" style="width:45%;">
 <p><img data-src="imgs/media_effects.png" style="width:100.0%"></p>
 </div></div>
 </section>
@@ -641,14 +635,11 @@
 <ul>
 <li class="fragment">An <strong>end-to-end framework</strong> that operationalizes this approach for <strong>video</strong>.<br>
 </li>
-<li class="fragment">Goes beyond isolated text or image analysis.<br>
-</li>
-<li class="fragment">Incorporates the crucial <strong>audio modality</strong>.</li>
+<li class="fragment">Integrates visual, audio, and textual signals</li>
 </ul>
 </section>
-<section id="our-framework-an-overview" class="slide level2 scrollable">
-<h2>Our Framework: An Overview</h2>
-<h3 id="from-raw-videos-to-communication-styles">From Raw Videos to Communication Styles</h3>
+<section id="our-framework-from-raw-videos-to-communication-styles" class="slide level2 scrollable">
+<h2>Our Framework: From Raw Videos to Communication Styles</h2>
 <div class="columns">
 <div class="column">
 <ul>
@@ -672,7 +663,6 @@
 </section>
 <section id="stage-1-from-raw-video-to-analysis-ready-streams" class="slide level2">
 <h2>Stage 1: From Raw Video to Analysis-Ready Streams</h2>
-<h3 id="preprocessing-and-filtering">Preprocessing and Filtering</h3>
 <div class="columns">
 <div class="column">
 <ul>
@@ -685,7 +675,7 @@
 <ul>
 <li class="fragment">Isolate candidate’s voice using <strong>denoising</strong> (Demucs) and <strong>speaker diarization</strong> (PyAnnote).</li>
 </ul></li>
-<li class="fragment"><p><strong>Text generation</strong>:</p>
+<li class="fragment"><p><strong>Speech transcription</strong>:</p>
 <ul>
 <li class="fragment">Transcribe only the filtered candidate audio with <strong>ASR (Whisper)</strong>.</li>
 </ul></li>
@@ -697,7 +687,6 @@
 </section>
 <section id="stage-2-quantifying-sight-sound-and-speech" class="slide level2">
 <h2>Stage 2: Quantifying Sight, Sound, and Speech</h2>
-<h3 id="multimodal-feature-extraction">Multimodal Feature Extraction</h3>
 <div class="columns">
 <div class="column">
 <ul>
@@ -726,7 +715,6 @@
 </section>
 <section id="stage-3-identifying-communication-styles" class="slide level2">
 <h2>Stage 3: Identifying Communication Styles</h2>
-<h3 id="hybrid-quantitativequalitative-method">Hybrid Quantitative–Qualitative Method</h3>
 <div class="columns">
 <div class="column">
 <ul>
@@ -749,9 +737,6 @@
 </li>
 <li class="fragment">“Concerned Articulate”<br>
 </li>
-<li class="fragment">“Responsive Rapid”<br>
-</li>
-<li class="fragment">“Negative Depressed”</li>
 </ul></li>
 </ul>
 </div><div class="column">
@@ -846,22 +831,18 @@ Example cluster types:
 <p><img data-src="imgs/style_charts.png" style="width:100.0%"></p>
 </div></div>
 </section>
-<section id="contributions-implications" class="slide level2">
-<h2>Contributions &amp; Implications</h2>
-<h3 id="what-this-framework-enables">What This Framework Enables</h3>
+<section id="what-this-framework-enables" class="slide level2">
+<h2>What This Framework Enables</h2>
 <ul>
-<li class="fragment"><p>Direct, practical response to the <strong>CMM special issue</strong> call for computational social media effects research.<br>
-</p></li>
-<li class="fragment"><p><strong>Advances step 1</strong>: Pipeline for creating valid, analysis-ready DTD streams from raw video.<br>
-</p></li>
-<li class="fragment"><p><strong>Innovates step 2</strong>: Multimodal method that integrates <strong>sight, sound, and speech</strong>.<br>
-</p></li>
-<li class="fragment"><p><strong>Enables step 3</strong>: Generates validated, predictive variables for <strong>theory-driven linkage analyses</strong>.</p></li>
-<li class="fragment"><p>Opens new research avenues:</p>
+<li class="fragment">This approach makes it possible to:
 <ul>
-<li class="fragment">Move beyond <strong>what is said</strong> to quantify <strong>how it is said</strong>.<br>
-</li>
-<li class="fragment">Paves the way for new theories of <strong>multimodal political communication</strong> and media effects.</li>
+<li class="fragment">Quantify how messages are delivered</li>
+<li class="fragment">Study multimodal communication styles</li>
+<li class="fragment">Link communication styles to audience outcomes</li>
+</ul></li>
+<li class="fragment">This moves media effects research from:
+<ul>
+<li class="fragment"><span class="neon-green"><strong>What is said → How communication is performed</strong>.</span></li>
 </ul></li>
 </ul>
 </section>

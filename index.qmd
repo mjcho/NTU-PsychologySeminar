@@ -516,36 +516,49 @@ The next section introduces this framework.
 ## A Framework for Analyzing and Linking Multimodal Social Media Content
 
 :::: {.columns}
-::: {.column}
-- MJ Cho, Chingching Chang, Yuan Hsiao, Hen-Hsen Huang  
-- RCHSS, Academia Sinica  
+
+::: {.column width="55%"}
+
+* MJ Cho, Chingching Chang, Yuan Hsiao, Hen‑Hsen Huang
+* RCHSS, Academia Sinica
+
 :::
-::: {.column}
+
+::: {.column width="45%"}
+
 ![](imgs/as_scene.png){width="100%"}
+
 :::
+
 ::::
 
 ---
 
 ## The Challenge: A New Era for Media Effects Research
 
-### Why We Need New Approaches
-
 :::: {.columns}
-::: {.column}
-- The field is shifting from **quantity of media use** to **content and its effects** (Pouwels et al., 2024).  
-- **Nature Research Intelligence**: Multimodal communication as a frontier.  
-- Traditional methods are insufficient for **personalized** and **fragmented** media environments (Ohme et al., 2024; Otto et al., 2024).  
-- The **video problem**:  
-  - Dominant form of social media content.  
-  - Multimodal and challenging to study (Kroon et al., 2024).  
-  - Audio channel remains an **under-studied dimension** of communication.
-:::
-::: {.column}
-![](imgs/media_effects.png){width="100%"}
-:::
-::::
 
+::: {.column width="55%"}
+
+- The field is shifting from **quantity of media use** to **content and its effects** [(Pouwels et al., 2024).]{.citation}
+- **Nature Research Intelligence**: Multimodal communication as a frontier.  
+- Multimodal communication is emerging as a major research frontier.
+- Traditional methods are insufficient for highly fragmented media environments [(Ohme et al., 2024).]{.citation}
+
+- **The video problem:**
+  * Video is now a dominant form of social media content.
+  * Video is inherently multimodal [(Kroon et al., 2024).]{.citation}
+  * The audio channel remains understudied in communication research.
+
+:::
+
+::: {.column width="45%"}
+
+![](imgs/media_effects.png){width="100%"}
+
+:::
+
+::::
 
 ---
 
@@ -585,14 +598,11 @@ The next section introduces this framework.
 ### Our Contribution
 
 - An **end-to-end framework** that operationalizes this approach for **video**.  
-- Goes beyond isolated text or image analysis.  
-- Incorporates the crucial **audio modality**.
+- Integrates visual, audio, and textual signals
 
 ---
 
-## Our Framework: An Overview
-
-### From Raw Videos to Communication Styles
+## Our Framework: From Raw Videos to Communication Styles
 
 :::: {.columns}
 ::: {.column}
@@ -615,8 +625,6 @@ The next section introduces this framework.
 
 ## Stage 1: From Raw Video to Analysis-Ready Streams
 
-### Preprocessing and Filtering
-
 :::: {.columns}
 ::: {.column}
 - **Goal**: Preprocess and transform noisy social media video into **isolated communication sources**.
@@ -627,8 +635,8 @@ The next section introduces this framework.
 - **Audio filtering**:  
   - Isolate candidate's voice using **denoising** (Demucs) and **speaker diarization** (PyAnnote).
 
-- **Text generation**:  
-  - Transcribe only the filtered candidate audio with **ASR (Whisper)**.
+- **Speech transcription**:  
+  - Transcribe only the filtered candidate audio with **ASR (Whisper)**. 
 
 - **Result**: A validated set of synchronized **video, audio, and text** data — only the **target communicator**.
 :::
@@ -640,8 +648,6 @@ The next section introduces this framework.
 ---
 
 ## Stage 2: Quantifying Sight, Sound, and Speech
-
-### Multimodal Feature Extraction
 
 :::: {.columns}
 ::: {.column}
@@ -666,8 +672,6 @@ The next section introduces this framework.
 
 ## Stage 3: Identifying Communication Styles
 
-### Hybrid Quantitative–Qualitative Method
-
 :::: {.columns}
 ::: {.column}
 - **Goal**: Identify a meaningful typology of **styles** from thousands of features.
@@ -683,8 +687,6 @@ The next section introduces this framework.
   - "Cheerful Energetic"  
   - "Stony Warm"  
   - "Concerned Articulate"  
-  - "Responsive Rapid"  
-  - "Negative Depressed"
 :::
 ::: {.column}
 ![](imgs/style_identification.png){width="100%"}
@@ -785,18 +787,16 @@ Example cluster types:
 
 ---
 
-## Contributions & Implications
+## What This Framework Enables
 
-### What This Framework Enables
+- This approach makes it possible to:
+  * Quantify how messages are delivered
+  * Study multimodal communication styles
+  * Link communication styles to audience outcomes
 
-- Direct, practical response to the **CMM special issue** call for computational social media effects research.  
-- **Advances step 1**: Pipeline for creating valid, analysis-ready DTD streams from raw video.  
-- **Innovates step 2**: Multimodal method that integrates **sight, sound, and speech**.  
-- **Enables step 3**: Generates validated, predictive variables for **theory-driven linkage analyses**.
+- This moves media effects research from:
+  * [**What is said → How communication is performed**.]{.neon-green}
 
-- Opens new research avenues:  
-  - Move beyond **what is said** to quantify **how it is said**.  
-  - Paves the way for new theories of **multimodal political communication** and media effects.
 
 ---
 

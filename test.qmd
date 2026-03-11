@@ -35,72 +35,166 @@ date: last-modified
 # minimal setup chunk
 ```
 
-# Some related ideas…
+## Why All These Matters?
 
 ---
 
-## {background-video="vids/jh.mp4" background-size="100%"}
+## A Tale of Scientific Evolution
+
+When Biology Becomes Computable, Mind Becomes Modelable
+
+* Cognition emerges from biological information processing.
+* Multi‑scale biological models create mechanistic foundations for psychological theory.
+* Integrated biological + digital‑trace data enables predictive models of behavior.
+* Synthetic agents and personas become useful testbeds for psychological mechanisms.
+* Psychology shifts from primarily correlational explanations toward mechanistic and intervention‑driven science.
 
 ---
 
-## The Puzzle
-
-- Digital media research often measures:
-  * **Time spent**
-  * **Platform usage**
-  * **Interaction counts**
-
-- But these measures miss something fundamental.
-
-- Digital environments are fundamentally **symbolic environments**. People interact with:
-  * **Images & language**
-  * **Multimodal cues, e.g., audiovisual**
-  * **Cultural symbols**
-
-- What spreads in these environments is not only information, but also **styles, meanings, and signals**.
+# Human–AI Interaction for Understanding Online Public Opinion
 
 ---
 
-## The Analogy
+## Real‑Time Assistance for Understanding Social Issues
+### Research Team and Background
 
-- Another scientific field recently underwent a similar transformation: **biology**. For much of its history, biology was:
-  * **Descriptive & observational**
-  * **Limited by measurement tools**
+Interdisciplinary team at RCHSS, Academia Sinica:
 
-- Once biological systems became **digitally measurable**, the field changed. Researchers could integrate:
-  * **Genomic data**
-  * **Imaging data**
-  * **Physiological measurements**
-- Biology became increasingly **computational and model-driven**.
+* Mu‑Jung (MJ) Cho
+* Chingching Chang
+* Yuan Hsiao
+* Hen‑Hsen Huang
+* Yong‑Ju Chang
 
----
+Project goal:
 
-## The Transition
+* Improve public understanding of social issues
+* Facilitate more constructive public dialogue
 
-Something similar may now be happening in the study of **human communication and behavior**.
+Research foundation:
 
-- For the first time we can observe large-scale digital interaction environments with high resolution:
-  * Screenomics
-  * Digital trace data
-  * Multimodal communication archives
-
-- Combined with:
-  * Multimodal embeddings
-  * Large language and vision models
-
-These data allow us to study **systems of meaning** in digital media.
+* The largest online public‑opinion database in Taiwan
 
 ---
 
-## Next Project: Communication Styles in Social Media
+## Roots of Social Controversy: Gaps in Understanding
 
-This motivates the next project. Instead of analyzing individual posts or messages, we ask:
-[**Can we identify systematic communication styles in multimodal political media?**]{.neon-green}
+Cognitive biases interacting with new media environments create **understanding gaps**.
 
-To answer this question, we developed a pipeline that:  
+Examples include:
 
-1. Processes raw social media videos
-2. Extracts visual, vocal, and textual features
-3. Identifies recurring multimodal communication styles
+* Cognitive dissonance and selective exposure
+* Algorithmic filtering and echo chambers
+* Fragmentation of information in digital media
+* Diffusion and instability of epistemic authority
 
-The next section introduces this framework.
+These dynamics make it increasingly difficult to form shared public understanding.
+
+---
+
+## Improving Issue Understanding Through Human–AI Interaction
+
+Multimodal public‑opinion data × RAG × multi‑agent systems
+
+Core components:
+
+* Taiwan's most comprehensive online public‑opinion database
+* Retrieval‑augmented generation (RAG) to improve information accessibility
+* Multi‑agent collaboration to generate deeper synthesis
+* Interactive framing that guides user reasoning
+
+---
+
+## Human‑Centered Multimodal Empirical Research
+
+A comprehensive methodological approach:
+
+From social science to human–computer interaction
+
+Key directions:
+
+* Rapid growth of multimodal data in social science
+* Cross‑modal analysis (text, images, social interaction dynamics)
+* Human–AI interaction as a tool to deepen issue understanding
+
+---
+
+## Multi‑Agent System Architecture
+
+RAG × vector databases × collaborative agents
+
+System workflow:
+
+Drafting → Critiquing → Refining
+
+Technical components:
+
+* Vector database: multilingual‑e5 embeddings + ChromaDB
+* RAG question‑answering agent
+* Summarization agent (Gemini models)
+
+System capabilities:
+
+* Iterative refinement of responses
+* Position extraction and argument mapping
+* Video and multimodal content summarization
+
+---
+
+## Guided Human–AI Interaction: Perspective Spectrum and Q&A
+
+System interface supports:
+
+* Mapping diverse viewpoints across a spectrum
+* Guided Q&A to identify key points of disagreement
+* Structured exploration of complex issues
+
+Goal:
+
+* Help users understand multiple perspectives
+* Reduce binary polarization
+* Support more nuanced public discussion
+
+---
+
+## Human–AI Interaction for Issue Understanding
+
+Key contribution:
+
+The system helps users navigate complex public controversies by presenting structured perspectives and arguments.
+
+Expected benefits:
+
+* More informed public reasoning
+* Reduced polarization
+* Greater capacity for constructive civic dialogue
+
+---
+
+## A New Phase for Social Science
+
+Behavior becomes measurable across multiple layers:
+
+* Biological processes
+* Cognitive dynamics
+* Digital trace environments
+
+This integration allows:
+
+* Emotion and thought contagion to be modeled more precisely
+* Media effects to be studied at multiple temporal and social scales
+* Computational social science to connect with biological and cognitive models
+
+The result may be a new phase of social science:
+
+**A designable science of human behavior.**
+
+---
+
+## Thank You
+
+Questions?
+
+Mu‑Jung 'MJ' Cho
+
+[mjcho@as.edu.tw](mailto:mjcho@as.edu.tw)
