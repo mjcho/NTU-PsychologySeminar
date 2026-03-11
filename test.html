@@ -30,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="test_files/libs/revealjs/dist/theme/quarto-2f2e91e154c092f1acb999ee33f2e3e4.css">
+  <link rel="stylesheet" href="test_files/libs/revealjs/dist/theme/quarto-2aaa8ca8a4e3214b839a2d6159645904.css">
   <link href="test_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="test_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="test_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -150,192 +150,193 @@
 
   <p class="date">2026-03-11</p>
 </section>
-<section id="from-digital-trace-data-to-communication-styles" class="slide level2">
-<h2>From Digital Trace Data to Communication Styles</h2>
+<section id="research-team-and-background" class="slide level2">
+<h2>Research Team and Background</h2>
+<p>Interdisciplinary collaboration at RCHSS, Academia Sinica.</p>
+<p>Team members include:</p>
+<ul>
+<li class="fragment">Mu‑Jung (MJ) Cho</li>
+<li class="fragment">Chingching Chang</li>
+<li class="fragment">Yuan Hsiao</li>
+<li class="fragment">Hen‑Hsen Huang</li>
+<li class="fragment">Yong‑Ju Chang</li>
+</ul>
+<p>Project goal:</p>
+<ul>
+<li class="fragment">Improve citizens’ understanding of complex public controversies</li>
+<li class="fragment">Support more reflective and evidence‑based discussion</li>
+</ul>
+<p>Research foundation:</p>
+<ul>
+<li class="fragment">Large‑scale Taiwanese online public‑opinion databases</li>
+<li class="fragment">Retrieval‑augmented generation (RAG) system integrating real public discourse</li>
+</ul>
 </section>
-<section id="a-framework-for-analyzing-and-linking-multimodal-social-media-content" class="slide level2">
-<h2>A Framework for Analyzing and Linking Multimodal Social Media Content</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
+<section id="roots-of-social-controversy-gaps-in-understanding" class="slide level2">
+<h2>Roots of Social Controversy: Gaps in Understanding</h2>
+<p>Public controversies often persist not only because of disagreement, but because citizens encounter <strong>fragmented and selectively presented information</strong>.</p>
+<p>Several mechanisms contribute to this problem:</p>
 <ul>
-<li class="fragment">MJ Cho, Chingching Chang, Yuan Hsiao, Hen‑Hsen Huang</li>
-<li class="fragment">RCHSS, Academia Sinica</li>
+<li class="fragment">Selective exposure and motivated reasoning</li>
+<li class="fragment">Algorithmic filtering and echo chambers</li>
+<li class="fragment">Fragmentation of public discourse across platforms</li>
+<li class="fragment">Declining shared epistemic authority</li>
 </ul>
-</div><div class="column" style="width:45%;">
-<!-- Reuse the RCHSS / Academia Sinica image used in the original slide (p.39). Replace filename with the same one used in your QMD. -->
-<p><img data-src="images/rchss_building.png" style="width:100.0%"></p>
-</div></div>
+<p>These dynamics make it difficult for citizens to form a coherent understanding of complex issues.</p>
 </section>
-<section id="the-challenge-a-new-era-for-media-effects-research" class="slide level2">
-<h2>The challenge: A new era for media effects research</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<ul>
-<li class="fragment">The field is shifting from <strong>quantity of media use</strong> to <strong>content and its effects</strong> <span class="citation">(Pouwels et al., 2024).</span></li>
-<li class="fragment">Multimodal communication is emerging as a major research frontier.</li>
-<li class="fragment">Traditional methods are insufficient for highly fragmented media environments <span class="citation">(Ohme et al., 2024).</span></li>
-</ul>
-<p><strong>The video problem:</strong></p>
-<ul>
-<li class="fragment">Video is now a dominant form of social media content.</li>
-<li class="fragment">Video is inherently multimodal <span class="citation">(Kroon et al., 2024).</span></li>
-<li class="fragment">The audio channel remains understudied in communication research.</li>
-</ul>
-</div><div class="column" style="width:45%;">
-<!-- Reuse the social media / video interface illustration from the original deck (p.41). -->
-<p><img data-src="images/social_media_video.png" style="width:100.0%"></p>
-</div></div>
-</section>
-<section id="why-multimodal-thinking-matters" class="slide level2">
-<h2>Why multimodal thinking matters</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p>Online media are inherently multimodal.</p>
-<p>Communication involves multiple channels:</p>
-<ul>
-<li class="fragment">Visual expression</li>
-<li class="fragment">Vocal tone</li>
-<li class="fragment">Textual content</li>
-</ul>
-<p>These channels work together to produce:</p>
-<ul>
-<li class="fragment">Emotional signals</li>
-<li class="fragment">Performance styles</li>
-<li class="fragment">Social meaning</li>
-</ul>
-<p><strong>Goal:</strong></p>
-<ul>
-<li class="fragment">Measure communication styles</li>
-<li class="fragment">Study their effects</li>
-<li class="fragment">Build a coherent analytical framework</li>
-</ul>
-</div><div class="column" style="width:45%;">
-<!-- Reuse the multimodal political video example (AOC clip slide around p.42). -->
-<p><img data-src="images/multimodal_video_example.png" style="width:100.0%"></p>
-</div></div>
-</section>
-<section id="roadmap-from-the-literature" class="slide level2 scrollable">
-<h2>Roadmap from the literature</h2>
-<p>A common three‑step approach in computational media effects research <span class="citation">(Pouwels et al., 2024).</span></p>
+<section id="system-design-humanai-interaction-components" class="slide level2 scrollable">
+<h2>System Design: Human–AI Interaction Components</h2>
+<p>The system integrates three major components.</p>
 <ol type="1">
-<li class="fragment">Collect digital trace data</li>
-<li class="fragment">Perform automated content analysis</li>
-<li class="fragment">Conduct linkage analysis with outcomes</li>
+<li class="fragment"><strong>AI‑generated video summary</strong></li>
 </ol>
-<p><strong>Our contribution:</strong></p>
 <ul>
-<li class="fragment">An end‑to‑end framework designed for multimodal video content</li>
-<li class="fragment">Integrates visual, audio, and textual signals</li>
+<li class="fragment">LLM summarizes long debate videos into structured key points.</li>
 </ul>
-</section>
-<section id="our-framework-from-raw-videos-to-communication-styles" class="slide level2 scrollable">
-<h2>Our framework: From raw videos to communication styles</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p>Data:</p>
-<ul>
-<li class="fragment">398 Instagram videos</li>
-<li class="fragment">12 U.S. Senate candidates</li>
-<li class="fragment">2024 election cycle</li>
-</ul>
-<p>Goal:</p>
-<p>Transform raw videos into <strong>interpretable communication styles</strong>.</p>
-<p>Pipeline includes three stages:</p>
-<ol type="1">
-<li class="fragment">Preprocessing</li>
-<li class="fragment">Multimodal feature extraction</li>
-<li class="fragment">Style identification</li>
+<ol start="2" type="1">
+<li class="fragment"><strong>Viewpoint spectrum interface</strong></li>
 </ol>
-</div><div class="column" style="width:45%;">
-<!-- Reuse the pipeline diagram shown in the original "From raw videos to communication styles" slide (p.46–47). -->
-<p><img data-src="images/pipeline_overview.png" style="width:100.0%"></p>
-</div></div>
+<ul>
+<li class="fragment">Visualizes opposing standpoints across multiple policy dimensions.</li>
+<li class="fragment">Users can click on different positions and read real arguments from politicians, experts, and public figures retrieved through RAG.</li>
+</ul>
+<ol start="3" type="1">
+<li class="fragment"><strong>Interactive Q&amp;A agent</strong></li>
+</ol>
+<ul>
+<li class="fragment">Suggests relevant questions related to the video content.</li>
+<li class="fragment">Users can ask follow‑up questions and retrieve supporting evidence from a public opinion database.</li>
+</ul>
 </section>
-<section id="stage-1-from-raw-video-to-analysisready-streams" class="slide level2">
-<h2>Stage 1: From raw video to analysis‑ready streams</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p>Goal: Isolate the candidate as the communicator.</p>
-<p>Processing steps:</p>
+<section id="experimental-design" class="slide level2">
+<h2>Experimental Design</h2>
+<p>We conducted a controlled experiment with <strong>64 participants</strong> across four interface conditions.</p>
+<p>Condition A – Video summary only</p>
+<p>Condition B – Video summary + viewpoint spectrum</p>
+<p>Condition C – Video summary + Q&amp;A agent</p>
+<p>Condition D – Video summary + viewpoint spectrum + Q&amp;A agent</p>
+<p>Participants watched a debate video on the <strong>Fourth Nuclear Power Plant referendum in Taiwan</strong>, interacted with the system, and then completed post‑interaction surveys and knowledge tests. fileciteturn7file0</p>
+<p>Measures included:</p>
 <ul>
-<li class="fragment">Face detection and recognition</li>
-<li class="fragment">Speaker diarization and audio filtering</li>
-<li class="fragment">Speech transcription</li>
+<li class="fragment">Issue knowledge</li>
+<li class="fragment">Attitude positions across multiple policy dimensions</li>
+<li class="fragment">Critical thinking self‑assessment</li>
+<li class="fragment">System usability and workload</li>
 </ul>
-<p>Result:</p>
-<p>A clean set of <strong>synchronized video, audio, and text streams</strong>.</p>
-</div><div class="column" style="width:45%;">
-<!-- Reuse the preprocessing / filtering diagram from the Stage 1 slide (p.48–49). -->
-<p><img data-src="images/preprocessing_pipeline.png" style="width:100.0%"></p>
-</div></div>
 </section>
-<section id="stage-2-quantifying-sight-sound-and-speech" class="slide level2">
-<h2>Stage 2: Quantifying sight, sound, and speech</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p>Multimodal feature extraction</p>
-<p><strong>Visual features</strong></p>
+<section id="user-interaction-behavior" class="slide level2">
+<h2>User Interaction Behavior</h2>
+<p>System logs show that participants actively explored the interface components.</p>
+<p>Examples of interaction patterns:</p>
 <ul>
-<li class="fragment">Facial action units</li>
-<li class="fragment">Head pose</li>
-<li class="fragment">Valence and arousal</li>
+<li class="fragment">Users frequently revisited the AI summary while interacting with other components.</li>
+<li class="fragment">Participants in Q&amp;A conditions asked an average of about <strong>11 questions</strong> during the session.</li>
+<li class="fragment">Participants in viewpoint spectrum conditions clicked stance nodes <strong>60–70 times on average</strong>, indicating active exploration of perspectives. fileciteturn7file1</li>
 </ul>
-<p><strong>Audio features</strong></p>
-<ul>
-<li class="fragment">Pitch</li>
-<li class="fragment">Speech rate</li>
-<li class="fragment">Vocal emotion</li>
-</ul>
-<p><strong>Textual features</strong></p>
-<ul>
-<li class="fragment">Topic modeling</li>
-</ul>
-</div><div class="column" style="width:45%;">
-<!-- Reuse the feature extraction diagram showing visual/audio/text pipelines (p.50–51). -->
-<p><img data-src="images/feature_extraction.png" style="width:100.0%"></p>
-</div></div>
+<p>These results suggest that users did not passively consume AI output, but <strong>actively navigated between summaries, perspectives, and questions</strong>.</p>
 </section>
-<section id="stage-3-identifying-communication-styles" class="slide level2">
-<h2>Stage 3: Identifying communication styles</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p>Goal: Identify meaningful <strong>multimodal style patterns</strong>.</p>
-<p>Methods:</p>
+<section id="effects-on-issue-understanding" class="slide level2">
+<h2>Effects on Issue Understanding</h2>
+<p>Participants performed strongly on post‑test knowledge questions about the debate.</p>
+<p>Average knowledge score:</p>
 <ul>
-<li class="fragment">Unsupervised clustering across multimodal feature space</li>
-<li class="fragment">LLM‑assisted interpretation of clusters</li>
+<li class="fragment"><strong>9.11 out of 10 across all conditions</strong>. fileciteturn7file1</li>
 </ul>
-<p>Output:</p>
-<ul>
-<li class="fragment">Interpretable communication style categories</li>
-<li class="fragment">Quantitative variables for downstream analysis</li>
-</ul>
-</div><div class="column" style="width:45%;">
-<!-- Reuse the clustering / style visualization figure (p.52–54). -->
-<p><img data-src="images/style_clustering.png" style="width:100.0%"></p>
-</div></div>
+<p>This indicates that the AI‑assisted system successfully conveyed key factual information from the debate.</p>
 </section>
-<section id="example-findings" class="slide level2">
-<h2>Example findings</h2>
-<p>Communication styles differ across political contexts.</p>
-<p>Examples:</p>
+<section id="attitude-change-and-polarization" class="slide level2">
+<h2>Attitude Change and Polarization</h2>
+<p>Across conditions, participants’ attitudes remained <strong>largely stable overall</strong>.</p>
+<p>Key findings:</p>
 <ul>
-<li class="fragment">Democrats more often use <strong>cheerful and energetic</strong> styles</li>
-<li class="fragment">Republicans more often use <strong>serious and reserved</strong> styles</li>
+<li class="fragment">Most opinion changes were small and centered around zero.</li>
+<li class="fragment">Some sub‑issues showed moderate shifts.</li>
+<li class="fragment">Participants with stronger initial attitudes tended to move slightly toward the midpoint of the scale.</li>
 </ul>
-<p>Implication:</p>
-<p>Communication styles are <strong>context‑dependent</strong>, not universally effective.</p>
+<p>This suggests a <strong>possible mild depolarization effect</strong> rather than strong persuasion.</p>
+<p>[ADD FIGURE HERE] Suggested visualization: <strong>violin plot of attitude change distribution across groups</strong> (the figure showing distributions centered near zero). This figure communicates the “stability + small shifts” pattern very clearly to audiences.</p>
 </section>
-<section id="what-this-framework-enables" class="slide level2">
-<h2>What this framework enables</h2>
-<p>This approach makes it possible to:</p>
+<section id="regression-evidence" class="slide level2">
+<h2>Regression Evidence</h2>
+<p>Regression models further clarify the mechanisms behind attitude change.</p>
+<p>Key findings:</p>
 <ul>
-<li class="fragment">Quantify how messages are delivered</li>
-<li class="fragment">Study multimodal communication styles</li>
-<li class="fragment">Link communication styles to audience outcomes</li>
+<li class="fragment"><strong>Pre‑existing attitudes strongly predict post attitudes.</strong></li>
+<li class="fragment">The <strong>viewpoint spectrum condition (Group B)</strong> shows greater absolute attitude change than the summary‑only baseline.</li>
+<li class="fragment">Participants with stronger initial attitudes tend to move <strong>slightly toward the midpoint</strong>, suggesting mild depolarization.</li>
 </ul>
-<p>This moves media effects research from:</p>
-<p><strong>What is said → how communication is performed</strong>.</p>
+<p>[ADD TABLE HERE] Suggested table: <strong>Partial regression table including only these rows</strong>:</p>
+<ul>
+<li class="fragment">Pre‑test score</li>
+<li class="fragment">Group B (vs A)</li>
+<li class="fragment">Group C (vs A)</li>
+<li class="fragment">Group D (vs A)</li>
+</ul>
+<p>This keeps the slide readable while showing the core statistical result.</p>
+</section>
+<section class="slide level2">
+
+<p>Across conditions, participants’ attitudes remained <strong>largely stable overall</strong>.</p>
+<p>Key findings:</p>
+<ul>
+<li class="fragment">Most opinion changes were small and centered around zero.</li>
+<li class="fragment">Some sub‑issues showed moderate shifts.</li>
+<li class="fragment">Participants with stronger initial attitudes tended to move slightly toward the midpoint of the scale.</li>
+</ul>
+<p>This suggests a <strong>possible mild depolarization effect</strong> rather than strong persuasion.</p>
+</section>
+<section id="role-of-interface-components" class="slide level2">
+<h2>Role of Interface Components</h2>
+<p>Some interface features appear to encourage more cognitive engagement.</p>
+<p>For example:</p>
+<ul>
+<li class="fragment">The viewpoint spectrum condition (Group B) produced <strong>greater absolute attitude change</strong> than the summary‑only baseline. fileciteturn7file1</li>
+<li class="fragment">Interactive questioning led users to explore additional evidence and perspectives.</li>
+</ul>
+<p>These results suggest that <strong>structured exploration of arguments may stimulate reflection</strong>, even when overall attitudes remain relatively stable.</p>
+</section>
+<section id="what-these-results-suggest" class="slide level2">
+<h2>What These Results Suggest</h2>
+<p>The system does <strong>not strongly persuade users</strong>.</p>
+<p>Instead, it appears to support <strong>reflective exploration of complex issues</strong>.</p>
+<p>Observed patterns:</p>
+<ul>
+<li class="fragment">Users actively explored different viewpoints and questions.</li>
+<li class="fragment">Knowledge acquisition was high.</li>
+<li class="fragment">Attitudes remained mostly stable, with occasional moderation effects.</li>
+</ul>
+<p>This suggests that human–AI systems may function as <strong>cognitive scaffolding for public reasoning</strong>, rather than persuasion tools.</p>
+</section>
+<section id="implications-for-humanai-systems" class="slide level2">
+<h2>Implications for Human–AI Systems</h2>
+<p>Rather than directly persuading users, AI systems may function as <strong>cognitive scaffolding</strong> for public reasoning.</p>
+<p>Potential benefits include:</p>
+<ul>
+<li class="fragment">Helping users explore multiple perspectives</li>
+<li class="fragment">Structuring complex arguments</li>
+<li class="fragment">Supporting reflective rather than reactive engagement with controversial issues</li>
+</ul>
+<p>Human–AI systems may therefore complement traditional media and education by acting as <strong>interactive tools for issue understanding</strong>.</p>
+</section>
+<section id="a-new-phase-for-social-science" class="slide level2">
+<h2>A New Phase for Social Science</h2>
+<p>Behavior becomes measurable across multiple layers:</p>
+<ul>
+<li class="fragment">Cognitive processes</li>
+<li class="fragment">Digital trace environments</li>
+<li class="fragment">Human–AI interaction systems</li>
+</ul>
+<p>This integration allows researchers to study how people understand complex issues in <strong>real interaction environments</strong>, not only through surveys.</p>
+<p>The result may be a new phase of social science:</p>
+<p><strong>A designable science of human understanding.</strong></p>
+</section>
+<section id="thank-you" class="slide level2">
+<h2>Thank You</h2>
+<p>Human–AI interaction may allow us to move beyond simply measuring public opinion.</p>
+<p>Instead, we can begin to <strong>design systems that help people understand complex issues</strong>.</p>
+<p>Questions?</p>
+<p>Mu‑Jung ‘MJ’ Cho</p>
+<p><a href="mailto:mjcho@as.edu.tw">mjcho@as.edu.tw</a></p>
 
 </section>
     </div>

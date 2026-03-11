@@ -39,7 +39,7 @@ $presentation-heading-color: $sw-pink-strong !default;
 $presentation-heading-font-weight: 300;
 //$presentation-heading-line-height: 2;
 //$presentation-block-margin: 28px;
-$presentation-font-size-root: 30px;
+$presentation-font-size-root: 28px;
 
 // Colors
 $body-bg: $sw-bg !default;
@@ -178,7 +178,7 @@ $code-inline-border-color: rgba(249, 42, 173, 0.6) !default;
 // Lists
 .reveal ul, {
   font-weight: 200;
-  margin-top: 0.8em;
+  margin-top: 0.4em;
 }
 
 .reveal ol {

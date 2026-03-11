@@ -465,20 +465,6 @@ If digital life can now be measured at this level of resolution, then the next q
 
 ---
 
-## The Analogy
-
-- Another scientific field recently underwent a similar transformation: **biology**. For much of its history, biology was:
-  * **Descriptive & observational**
-  * **Limited by measurement tools**
-
-- Once biological systems became **digitally measurable**, the field changed. Researchers could integrate:
-  * **Genomic data**
-  * **Imaging data**
-  * **Physiological measurements**
-- Biology became increasingly **computational and model-driven**.
-
----
-
 ## The Transition
 
 Something similar may now be happening in the study of **human communication and behavior**.
@@ -496,18 +482,31 @@ Something similar may now be happening in the study of **human communication and
 
 ---
 
+## The Analogy
+
+- Another scientific field recently underwent a similar transformation: **biology**. For much of its history, biology was:
+  * **Descriptive & observational**
+  * **Limited by measurement tools**
+
+- Once biological systems became **digitally measurable**, the field changed. Researchers could integrate:
+  * **Genomic data**
+  * **Imaging data**
+  * **Physiological measurements**
+- Biology became increasingly **computational and model-driven**.
+
+---
+
 ## Next Project: Communication Styles in Social Media
 
-This motivates the next project. Instead of analyzing individual posts or messages, we ask:
+- This motivates the next project. Instead of analyzing individual posts or messages, we ask:
 [**Can we identify systematic communication styles in multimodal political media?**]{.neon-green}
 
-To answer this question, we developed a pipeline that:  
+- To answer this question, we developed a pipeline that:  
+  1. Processes raw social media videos
+  2. Extracts visual, vocal, and textual features
+  3. Identifies recurring multimodal communication styles
 
-1. Processes raw social media videos
-2. Extracts visual, vocal, and textual features
-3. Identifies recurring multimodal communication styles
-
-The next section introduces this framework.
+- The next section introduces this framework.
 
 ---
 
@@ -802,46 +801,77 @@ Example cluster types:
 
 ## Why All These Matters?
 
-### A tale of scientific evolution
+- Public controversies today unfold in a radically different information environment.
+  * Citizens encounter **massive volumes of fragmented information**.
+  * Algorithms curate different realities for different users.
+  * Competing narratives circulate simultaneously across platforms.
+
+- As a result, many disagreements are not simply disagreements in values, but **what people believe the world actually looks like**.
+- **Key question:**
+  * Can human–AI interaction systems help people *navigate complex information environments* and understand controversial issues more clearly?
+
+---
+
+## A Tale of Scientific Evolution
 
 - When Biology Becomes Computable, Mind Becomes Modelable
-  - Cognition emerges from biological information processing
-  - Multi-scale biological models create mechanistic foundations for psychological theory
-  - Integrated biological + digital-trace data enables predictive models of behavior
-  - Synthetic agents & personas become valid testbeds for psychological mechanisms
-  - Psychology shifts from correlational to mechanistic and intervention-driven
+  * Cognition emerges from biological information processing.
+  * Multi‑scale biological models create mechanistic foundations for psychological theory.
+  * Integrated biological + digital‑trace data enables predictive models of behavior.
+  * Synthetic agents and personas become useful testbeds for psychological mechanisms.
+  * Psychology shifts from primarily correlational explanations toward mechanistic and intervention‑driven science.
 
 ---
 
-# 網路輿情的人智互動：即時輔助社會議題理解
+# Human–AI Interaction for Understanding Online Public Opinion
 
 ---
 
-## 研究團隊與背景
+## Asis-RAG: A Human–AI Interaction System for Exploring Online Public Opinion
+
+This project examines whether human–AI interaction systems can help citizens better understand controversial policy debates by combining:
+
+* AI‑generated summaries
+* Structured viewpoint exploration
+* Interactive question‑answering agents
+
+---
+
+## Research Team and Background
 
 :::: {.columns}
 ::: {.column}
-- 人社中心跨領域團隊：卓牧融、張卿卿、蕭遠、黃瀚萱、張永儒  
-- 目標：提升社會議題理解、促進公共理性對話  
-- 基礎：台灣規模最大的網路輿情資料庫
+
+
+- Project goal:
+  * Improve citizens' understanding of complex public controversies
+  * Support more reflective and evidence‑based discussion
+
+- Research foundation:
+  * Large‑scale Taiwanese online public‑opinion databases
+  * Retrieval‑augmented generation (RAG) system integrating real public discourse
+
 :::
 ::: {.column}
 ![](imgs/as_scene.png){width="100%"}
+
+- Research team: MJ Cho, An-Ting Hsieh, Yu-Wei Huang, Chingching Chang, Yuan Hsiao, Hen‑Hsen Huang, Yung‑Ju Chang
 :::
 ::::
 
 ---
 
-## 社會爭議的根源：理解不足
-
-### 認知偏差 + 新媒介生態 = 理解鴻溝
+## Roots of Social Controversy: Gaps in Understanding
 
 :::: {.columns}
 ::: {.column}
-- 認知協調、選擇性暴露  
-- 演算法濾泡與迴聲室效應持續存在  
-- 新媒介型態造成資訊碎片化  
-- 認知權威分散與不穩定 → 難以形成公共共識
+- Public controversies often persist not only because of disagreement, but because citizens encounter **fragmented and selectively presented information**.
+  * Selective exposure and motivated reasoning
+  * Algorithmic filtering and echo chambers
+  * Fragmentation of public discourse across platforms
+  * Declining shared epistemic authority
+
+- These dynamics make it difficult for citizens to form a coherent understanding of complex issues.
 :::
 ::: {.column}
 ![](imgs/debate.png){width="100%"}
@@ -850,16 +880,21 @@ Example cluster types:
 
 ---
 
-## 以人與 AI 的互動提升議題理解
-
-### 多模態輿情資料 × RAG × Multi-agent System
+## System Design: Human–AI Interaction Components
 
 :::: {.columns6040}
 ::: {.column}
-- 台灣最完整的網路輿情資料庫  
-- 檢索增強生成（RAG）提升資訊可得性  
-- 多代理人系統（multi-agent）協作產生深度理解  
-- 利用互動的框架化來引導認知過程
+The system integrates three major components.
+
+1. **AI‑generated video summary**  
+    * LLM summarizes long debate videos into structured key points.
+2. **Viewpoint spectrum interface**   
+    * Visualizes opposing standpoints across multiple policy dimensions.
+    * Users can click on different positions and read real arguments from politicians, experts, and public figures retrieved through RAG.
+3. **Interactive Q&A agent** 
+    * Suggests relevant questions related to the video content.
+    * Users can ask follow‑up questions and retrieve supporting evidence from a public opinion database.
+
 :::
 ::: {.column}
 ![](imgs/interface.png){width="100%"}
@@ -868,15 +903,17 @@ Example cluster types:
 
 ---
 
-## 以人為本的多模態實證研究
-
-### 全方位方法：從社會科學到人機互動
+## Experimental Design
 
 :::: {.columns6040}
 ::: {.column}
-- 多模態資料在社會科學中的應用迅速成長  
-- 跨模態分析（文本、影像、社群動態）  
-- 結合人智互動以提升議題理解深度
+
+- We conducted a controlled experiment with **64 participants** across four interface conditions.
+  a. Video summary only
+  b. Video summary + viewpoint spectrum
+  c. Video summary + Q&A agent
+  d. Video summary + viewpoint spectrum + Q&A agent
+
 :::
 ::: {.column}
 ![](imgs/multimodal_research.png){width="100%"}
@@ -891,10 +928,11 @@ Example cluster types:
 
 :::: {.columns}
 ::: {.column}
-- 多階段流程：Drafting → Critiquing → Refining  
-- 向量資料庫（multilingual-e5 + ChromaDB）  
-- RAG Q&A Agent、Summary Agent（Gemini）  
-- 支援逐段精煉、立場抽取、影片摘要
+- Participants watched a debate video on the **Fourth Nuclear Power Plant referendum in Taiwan**, interacted with the system, and then completed post‑interaction surveys and knowledge tests. Measures included:
+  * Issue knowledge
+  * Attitude positions across multiple policy dimensions
+  * Critical thinking self‑assessment
+  * System usability and workload
 :::
 ::: {.column}
 ![](imgs/multi_agent.png){width="100%"}
@@ -903,39 +941,86 @@ Example cluster types:
 
 ---
 
-## 人智互動引導：觀點光譜與 QA
+## Real-time Human–AI Interaction for Public Opinion Research
 
 ![](vids/rag.m4v){.r-stretch}
 
 ---
 
-## 人智互動引導：觀點光譜與 QA
+## User Interaction Behavior
 
-### 幫助使用者理解多元觀點，降低二元對立
+![](imgs/user_clicks.png){width="100%"}
 
-:::: {.columns6040}
-::: {.column}
-- 系統協助呈現多元立場與論點光譜  
-- 引導式 QA 幫助理解議題的關鍵爭點  
-- 促進更成熟、更細膩的公共討論能力
-:::
-::: {.column}
-![](imgs/qa.png){width="100%"}
-:::
-::::  
+- System logs show that participants actively explored the interface components. Examples of interaction patterns:
+  * Users frequently revisited the AI summary while interacting with other components.
+  * Participants in Q&A conditions asked an average of about **11 questions** during the session.
+  * Participants in viewpoint spectrum conditions clicked stance nodes **60–70 times on average**, indicating active exploration of perspectives.
+
+- These results suggest that users did not passively consume AI output, but **actively navigated between summaries, perspectives, and questions**.
 
 --- 
 
-## Why Do All These Matters?
+## Effects on Issue Understanding
 
-### A tale of scientific evolution
+![](imgs/kn_score.png){width="100%"}
 
-- A New Phase for Social Science
-  - Behavior becomes measurable across biological, cognitive, and digital layers.
-  - Emotion/thought contagion, media effects, social connectedness become model-ready.
-  - Computational social science gains grounding in biological and cognitive models.
-  - Interventions can be designed across biological, psychological, and social scales.
-  - Social science enters its own “digital biology moment” — a designable science of behavior.
+- Participants performed strongly on post‑test knowledge questions about the debate. Average knowledge score
+  * **9.11 out of 10 across all conditions**.
+  * This indicates that the AI‑assisted system successfully conveyed key factual information from the debate.
+
+
+---
+
+## Attitude Change and Polarization
+
+![](imgs/violin_po.png){width="100%"}
+
+- Across conditions, participants' attitudes remained **largely stable overall**.
+  * Most opinion changes were small and centered around zero.
+  * Some sub‑issues showed moderate shifts.
+  * Participants with stronger initial attitudes tended to move slightly toward the midpoint of the scale.
+
+- This suggests a **possible mild depolarization effect** rather than strong persuasion.
+
+---
+
+## Regression Evidence
+
+![](imgs/polar_reg.png){width="100%"}
+
+- Regression models further clarify the mechanisms behind attitude change.
+  * **Pre‑existing attitudes strongly predict post attitudes.**
+  * The **viewpoint spectrum condition (Group B)** shows greater absolute attitude change than the summary‑only baseline.
+  * Participants with stronger initial attitudes tend to move **slightly toward the midpoint**, suggesting mild depolarization.
+
+---
+
+## What These Results Suggest
+
+- The system does **not strongly persuade users**. Instead, it appears to support **reflective exploration of complex issues**.
+
+- Observed patterns:
+  * Users actively explored different viewpoints and questions.
+  * Knowledge acquisition was high.
+  * Attitudes remained mostly stable, with occasional moderation effects.
+
+- This suggests that human–AI systems may function as **cognitive scaffolding for public reasoning**, rather than persuasion tools.
+
+---
+
+
+## A New Phase for Social Science
+
+- Behavior becomes measurable across multiple layers:
+
+* Cognitive processes
+* Digital trace environments
+* Human–AI interaction systems
+
+- This integration allows researchers to study how people understand complex issues in **real interaction environments**, not only through surveys.
+
+- The result may be a new phase of social science:
+  * **A designable science of human understanding.**
 
 ---
 
@@ -945,11 +1030,18 @@ Example cluster types:
 
 :::: {.columns}
 ::: {.column}
-#### Mu-Jung ’MJ’ Cho | 卓牧融 
-[mjcho@as.edu.tw]{.neon-red}
+
+Human–AI interaction may allow us to move beyond simply measuring public opinion.
+Instead, we can begin to [**design systems that help people understand complex issues**.]{.neon-green}
+
+
 :::
 ::: {.column}
 ![](imgs/closing_visual.jpg){width="30%"}
+
+#### Mu-Jung ’MJ’ Cho | 卓牧融 
+[mjcho@as.edu.tw]{.neon-red}
+
 :::
 ::::
 

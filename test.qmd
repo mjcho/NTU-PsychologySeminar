@@ -35,30 +35,13 @@ date: last-modified
 # minimal setup chunk
 ```
 
-## Why All These Matters?
-
 ---
 
-## A Tale of Scientific Evolution
+## Research Team and Background
 
-When Biology Becomes Computable, Mind Becomes Modelable
+Interdisciplinary collaboration at RCHSS, Academia Sinica.
 
-* Cognition emerges from biological information processing.
-* Multi‑scale biological models create mechanistic foundations for psychological theory.
-* Integrated biological + digital‑trace data enables predictive models of behavior.
-* Synthetic agents and personas become useful testbeds for psychological mechanisms.
-* Psychology shifts from primarily correlational explanations toward mechanistic and intervention‑driven science.
-
----
-
-# Human–AI Interaction for Understanding Online Public Opinion
-
----
-
-## Real‑Time Assistance for Understanding Social Issues
-### Research Team and Background
-
-Interdisciplinary team at RCHSS, Academia Sinica:
+Team members include:
 
 * Mu‑Jung (MJ) Cho
 * Chingching Chang
@@ -68,106 +51,191 @@ Interdisciplinary team at RCHSS, Academia Sinica:
 
 Project goal:
 
-* Improve public understanding of social issues
-* Facilitate more constructive public dialogue
+* Improve citizens' understanding of complex public controversies
+* Support more reflective and evidence‑based discussion
 
 Research foundation:
 
-* The largest online public‑opinion database in Taiwan
+* Large‑scale Taiwanese online public‑opinion databases
+* Retrieval‑augmented generation (RAG) system integrating real public discourse
 
 ---
 
 ## Roots of Social Controversy: Gaps in Understanding
 
-Cognitive biases interacting with new media environments create **understanding gaps**.
+Public controversies often persist not only because of disagreement, but because citizens encounter **fragmented and selectively presented information**.
 
-Examples include:
+Several mechanisms contribute to this problem:
 
-* Cognitive dissonance and selective exposure
+* Selective exposure and motivated reasoning
 * Algorithmic filtering and echo chambers
-* Fragmentation of information in digital media
-* Diffusion and instability of epistemic authority
+* Fragmentation of public discourse across platforms
+* Declining shared epistemic authority
 
-These dynamics make it increasingly difficult to form shared public understanding.
-
----
-
-## Improving Issue Understanding Through Human–AI Interaction
-
-Multimodal public‑opinion data × RAG × multi‑agent systems
-
-Core components:
-
-* Taiwan's most comprehensive online public‑opinion database
-* Retrieval‑augmented generation (RAG) to improve information accessibility
-* Multi‑agent collaboration to generate deeper synthesis
-* Interactive framing that guides user reasoning
+These dynamics make it difficult for citizens to form a coherent understanding of complex issues.
 
 ---
 
-## Human‑Centered Multimodal Empirical Research
+## System Design: Human–AI Interaction Components
 
-A comprehensive methodological approach:
+The system integrates three major components.
 
-From social science to human–computer interaction
+1. **AI‑generated video summary**
 
-Key directions:
+* LLM summarizes long debate videos into structured key points.
 
-* Rapid growth of multimodal data in social science
-* Cross‑modal analysis (text, images, social interaction dynamics)
-* Human–AI interaction as a tool to deepen issue understanding
+2. **Viewpoint spectrum interface**
 
----
+* Visualizes opposing standpoints across multiple policy dimensions.
+* Users can click on different positions and read real arguments from politicians, experts, and public figures retrieved through RAG.
 
-## Multi‑Agent System Architecture
+3. **Interactive Q&A agent**
 
-RAG × vector databases × collaborative agents
-
-System workflow:
-
-Drafting → Critiquing → Refining
-
-Technical components:
-
-* Vector database: multilingual‑e5 embeddings + ChromaDB
-* RAG question‑answering agent
-* Summarization agent (Gemini models)
-
-System capabilities:
-
-* Iterative refinement of responses
-* Position extraction and argument mapping
-* Video and multimodal content summarization
+* Suggests relevant questions related to the video content.
+* Users can ask follow‑up questions and retrieve supporting evidence from a public opinion database.
 
 ---
 
-## Guided Human–AI Interaction: Perspective Spectrum and Q&A
+## Experimental Design
 
-System interface supports:
+We conducted a controlled experiment with **64 participants** across four interface conditions.
 
-* Mapping diverse viewpoints across a spectrum
-* Guided Q&A to identify key points of disagreement
-* Structured exploration of complex issues
+Condition A – Video summary only
 
-Goal:
+Condition B – Video summary + viewpoint spectrum
 
-* Help users understand multiple perspectives
-* Reduce binary polarization
-* Support more nuanced public discussion
+Condition C – Video summary + Q&A agent
+
+Condition D – Video summary + viewpoint spectrum + Q&A agent
+
+Participants watched a debate video on the **Fourth Nuclear Power Plant referendum in Taiwan**, interacted with the system, and then completed post‑interaction surveys and knowledge tests. fileciteturn7file0
+
+Measures included:
+
+* Issue knowledge
+* Attitude positions across multiple policy dimensions
+* Critical thinking self‑assessment
+* System usability and workload
 
 ---
 
-## Human–AI Interaction for Issue Understanding
+## User Interaction Behavior
 
-Key contribution:
+System logs show that participants actively explored the interface components.
 
-The system helps users navigate complex public controversies by presenting structured perspectives and arguments.
+Examples of interaction patterns:
 
-Expected benefits:
+* Users frequently revisited the AI summary while interacting with other components.
+* Participants in Q&A conditions asked an average of about **11 questions** during the session.
+* Participants in viewpoint spectrum conditions clicked stance nodes **60–70 times on average**, indicating active exploration of perspectives. fileciteturn7file1
 
-* More informed public reasoning
-* Reduced polarization
-* Greater capacity for constructive civic dialogue
+These results suggest that users did not passively consume AI output, but **actively navigated between summaries, perspectives, and questions**.
+
+---
+
+## Effects on Issue Understanding
+
+Participants performed strongly on post‑test knowledge questions about the debate.
+
+Average knowledge score:
+
+* **9.11 out of 10 across all conditions**. fileciteturn7file1
+
+This indicates that the AI‑assisted system successfully conveyed key factual information from the debate.
+
+---
+
+## Attitude Change and Polarization
+
+Across conditions, participants' attitudes remained **largely stable overall**.
+
+Key findings:
+
+* Most opinion changes were small and centered around zero.
+* Some sub‑issues showed moderate shifts.
+* Participants with stronger initial attitudes tended to move slightly toward the midpoint of the scale.
+
+This suggests a **possible mild depolarization effect** rather than strong persuasion.
+
+[ADD FIGURE HERE]
+Suggested visualization: **violin plot of attitude change distribution across groups** (the figure showing distributions centered near zero). This figure communicates the "stability + small shifts" pattern very clearly to audiences.
+
+---
+
+## Regression Evidence
+
+Regression models further clarify the mechanisms behind attitude change.
+
+Key findings:
+
+* **Pre‑existing attitudes strongly predict post attitudes.**
+* The **viewpoint spectrum condition (Group B)** shows greater absolute attitude change than the summary‑only baseline.
+* Participants with stronger initial attitudes tend to move **slightly toward the midpoint**, suggesting mild depolarization.
+
+[ADD TABLE HERE]
+Suggested table: **Partial regression table including only these rows**:
+
+* Pre‑test score
+* Group B (vs A)
+* Group C (vs A)
+* Group D (vs A)
+
+This keeps the slide readable while showing the core statistical result.
+
+---
+
+Across conditions, participants' attitudes remained **largely stable overall**.
+
+Key findings:
+
+* Most opinion changes were small and centered around zero.
+* Some sub‑issues showed moderate shifts.
+* Participants with stronger initial attitudes tended to move slightly toward the midpoint of the scale.
+
+This suggests a **possible mild depolarization effect** rather than strong persuasion.
+
+---
+
+## Role of Interface Components
+
+Some interface features appear to encourage more cognitive engagement.
+
+For example:
+
+* The viewpoint spectrum condition (Group B) produced **greater absolute attitude change** than the summary‑only baseline. fileciteturn7file1
+* Interactive questioning led users to explore additional evidence and perspectives.
+
+These results suggest that **structured exploration of arguments may stimulate reflection**, even when overall attitudes remain relatively stable.
+
+---
+
+## What These Results Suggest
+
+The system does **not strongly persuade users**.
+
+Instead, it appears to support **reflective exploration of complex issues**.
+
+Observed patterns:
+
+* Users actively explored different viewpoints and questions.
+* Knowledge acquisition was high.
+* Attitudes remained mostly stable, with occasional moderation effects.
+
+This suggests that human–AI systems may function as **cognitive scaffolding for public reasoning**, rather than persuasion tools.
+
+---
+
+## Implications for Human–AI Systems
+
+Rather than directly persuading users, AI systems may function as **cognitive scaffolding** for public reasoning.
+
+Potential benefits include:
+
+* Helping users explore multiple perspectives
+* Structuring complex arguments
+* Supporting reflective rather than reactive engagement with controversial issues
+
+Human–AI systems may therefore complement traditional media and education by acting as **interactive tools for issue understanding**.
 
 ---
 
@@ -175,23 +243,23 @@ Expected benefits:
 
 Behavior becomes measurable across multiple layers:
 
-* Biological processes
-* Cognitive dynamics
+* Cognitive processes
 * Digital trace environments
+* Human–AI interaction systems
 
-This integration allows:
-
-* Emotion and thought contagion to be modeled more precisely
-* Media effects to be studied at multiple temporal and social scales
-* Computational social science to connect with biological and cognitive models
+This integration allows researchers to study how people understand complex issues in **real interaction environments**, not only through surveys.
 
 The result may be a new phase of social science:
 
-**A designable science of human behavior.**
+**A designable science of human understanding.**
 
 ---
 
 ## Thank You
+
+Human–AI interaction may allow us to move beyond simply measuring public opinion.
+
+Instead, we can begin to **design systems that help people understand complex issues**.
 
 Questions?
 
