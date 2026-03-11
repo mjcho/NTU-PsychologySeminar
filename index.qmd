@@ -1,6 +1,6 @@
 ---
 title: "Multimodal digital trace data research using Screenomics and multi-agent systems"
-subtitle: "... and some thoughts on the dynamics of meanings"
+subtitle: "From digital interactions to communication styles and human understanding"
 author:
   - name: "卓牧融 | Mu-Jung 'MJ' Cho"
     orcid: '0000-0001-5500-6336'
@@ -922,9 +922,7 @@ The system integrates three major components.
 
 ---
 
-## Multi-agent 系統架構
-
-### RAG × 向量資料庫 × 多代理協同
+## Experimental Design Cont.
 
 :::: {.columns}
 ::: {.column}
