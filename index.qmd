@@ -1,6 +1,8 @@
 ---
-title: "Multimodal digital trace data research using Screenomics and multi-agent systems"
-subtitle: "From digital interactions to communication styles and human understanding"
+title: "螢幕組學："
+# title: "Multimodal digital trace data research using Screenomics and multi-agent systems"
+subtitle: "多模態數位足跡資料的心理、社會與健康意義"
+# subtitle: "From digital interactions to communication styles and human understanding"
 author:
   - name: "卓牧融 | Mu-Jung 'MJ' Cho"
     orcid: '0000-0001-5500-6336'
@@ -25,7 +27,7 @@ format:
     scrollable: true
 execute:
   echo: true
-occassion: "@ NTU Psychology Seminar"
+occassion: "@ NTU 人機互動與社群運算研究"
 date: last-modified
 ---
 
@@ -112,12 +114,11 @@ date: last-modified
 1. **Screenome 1.0** – research infrastructure & conventional ML-based measurements.
 2. **Screenome 2.0** – deep learning-based content analysis.
 3. **Screenomics 3.0** – multimodal encoders and large multimodal models (LMMs).
+<!-- [What changes in 3.0?]{.neon-cyan} -->
+    * screens become [vectors in multimodal space]{.neon-green}
+    * clustering, retrieval, and labeling become scalable
+    * inductive exploration and hypothesis generation become much easier
 
-[What changes in 3.0?]{.neon-cyan}
-
-* screens become [vectors in multimodal space]{.neon-green}
-* clustering, retrieval, and labeling become scalable
-* inductive exploration and hypothesis generation become much easier
 :::
 ::: {.column width="40%"}
 ![](imgs/scr1p0.png){width="100%"}
